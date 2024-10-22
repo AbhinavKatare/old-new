@@ -46,3 +46,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     displayNewsItems();
 });
+// Modify the createNewsItem function
+function createNewsItem(item) {
+    const newsItem = document.createElement('div');
+    newsItem.classList.add('news-item');
+    
+    // Add responsive image handling
+    const img = new Image();
+    img.src = item.image;
+    img.alt = item.title;
+    img.loading = 'lazy';
+    
+    const content = `
+        <div class="news-item-image">
+            ${img.outerHTML}
+        </div>
+        <div class="news-item-content">
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+            <a href="#" class="read-more-btn">Read More</a>
+        </div>
+    `;
+    
+    newsItem.innerHTML = content;
+    return newsItem;
+}
+
+// Add window resize handler
+window.addEventListener('resize', function() {
+    const newsGrid = document.getElementById('newsGrid');
+    if (window.innerWidth <= 768) {
+        newsGrid.style.gap = '20px';
+    } else {
+        newsGrid.style.gap = '30px';
+    }
+});
