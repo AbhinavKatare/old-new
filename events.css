@@ -71,7 +71,7 @@ body, html {
 .header {
   position: relative;
   height: 100vh;
-  background: url('Eventsbg.avif') no-repeat center center/cover;
+  background: url('eventsbg.avif') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
