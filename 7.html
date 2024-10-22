@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Day Course - Pragya Trust</title>
+    <link rel="stylesheet" href="7.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+          </div>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about-us.html">About Us</a></li>
+            <li class="nav-item"><a href="events.html">Events</a></li>
+            <li class="nav-item"><a href="pragya-academy.html">Pragya Academy</a></li>
+            <li class="nav-item"><a href="resources.html">Resources</a></li>
+            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+          <a href="login.html" class="btn-signin">Sign In</a>
+        </nav>
+      </header>
+      
+
+    <main>
+        <section class="seven-day-course-section">
+            <h1>7 Day Course</h1>
+            <p>Welcome to the Pragya Trust 7 Day Course. A comprehensive journey into the core of our spiritual teachings.</p>
+
+            <div class="seven-day-course-content">
+                <h2>Course Overview</h2>
+                <p>This intensive seven-day retreat offers a profound exploration of our teachings, practices, and philosophies, providing a transformative experience for serious seekers.</p>
+
+                <h2>Course Features</h2>
+                <ul>
+                    <li>In-depth study of advanced spiritual concepts</li>
+                    <li>Daily meditation and yoga sessions</li>
+                    <li>Silent reflection periods</li>
+                    <li>One-on-one guidance with experienced teachers</li>
+                    <li>Group discussions and experiential exercises</li>
+                    <li>Comprehensive course materials and long-term practice plan</li>
+                </ul>
+
+                <h2>Transform Your Life</h2>
+                <p>Embark on a week-long journey of self-discovery and spiritual growth with our 7 Day Course.</p>
+
+                <a href="#" class="btn learn-more-btn">Enroll in 7 Day Course</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="pragya-academy.html">Pragya Academy</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="prcy plc.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                    <li><a href="news.html">News & Updates</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script> 
+        document.getElementById("menuToggle").addEventListener("click", function () {
+    const navList = document.getElementById("navList");
+    navList.classList.toggle("active");
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    const headerContent = document.querySelector('.header-content');
+
+    menuToggle.addEventListener('click', function() {
+        navList.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        
+        if (navList.classList.contains('active')) {
+            headerContent.style.visibility = 'hidden';
+            document.body.style.overflow = 'hidden';
+        } else {
+            headerContent.style.visibility = 'visible';
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    </script>
+</body>
+
+</html>
