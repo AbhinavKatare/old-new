@@ -68,7 +68,7 @@ body, html {
 .header {
   position: relative;
   height: 100vh;
-  background: url('PGA-bg.avif') no-repeat center center/cover;
+  background: url('pga-bg.avif') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
